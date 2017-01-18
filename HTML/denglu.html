@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<title>professional-登陆</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="header_wrapper" class="container">
+			<h1><a href="index.html"><img src="images/login/hk_big_img.png" alt="红快云展" style="margin:20px 0; width: 206px; height:51px;"></a></h1>
+		</div>
+		<div id="body_wrapper">
+			<div class="login_bg">
+				<div class="container">
+					<div class="frame">
+						<img src="images/login/hk_small_img.png" alt="" style="margin-top:30px; margin-left:30px; width: 121px; height: 33px;">
+						<form action="">
+							<input type="text" placeholder="请输入账号">
+							<input type="text" placeholder="请输入密码">
+							<a href="javascript:selection1()"><img src="images/login/selected.png" alt="" class="c"></a>&nbsp;&nbsp;&nbsp;记住当前账户
+							<a href="javascript:selection2()" datra-s="s"><img src="images/login/selected.png" alt="" class="s"></a>&nbsp;&nbsp;&nbsp;记住密码
+						</form>
+						<div>
+							<a href="javascript:void(0)"><i>免费注册</i></a>
+							<a href="javascript:void(0)"><span><i>忘记密码</i></span></a>
+						</div>
+						<input type="submit" value="登陆">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var count_c = 0;
+			var img_c = document.getElementsByClassName("frame")[0].getElementsByClassName('c')[0];
+			function selection1 () {
+				if (count_c%2 == 0) {
+					img_c.src = "images/login/unselected.png";
+				};
+				if (count_c%2 == 1) {
+					img_c.src = "images/login/selected.png";
+				};
+				count_c++;
+				
+			}
+			var count_s = 0;
+			var img_s = document.getElementsByClassName("frame")[0].getElementsByClassName('s')[0];
+			function selection2 () {
+				if (count_s%2 == 0) {
+					img_s.src = "images/login/unselected.png";
+				};
+				if (count_s%2 == 1) {
+					img_s.src = "images/login/selected.png";
+				};
+				count_s++;
+				
+			}
+		</script>
+		<div id="footer_wrapper">
+			<div class="container">
+				<div class="footer_list">
+					<dl>
+						<dt><a href="javascript:void(0)">新手指南</a></dt>
+						<dd><a href="javascript:void(0)">我是参展商</a></dd>
+						<dd><a href="javascript:void(0)">我是服务商</a></dd>
+						<dd><a href="javascript:void(0)">我是合伙人</a></dd>
+						<dd><a href="javascript:void(0)">交易指南</a></dd>
+						<dd><a href="javascript:void(0)">常见问题</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">旗下产品</a></dt>
+						<dd><a href="javascript:void(0)">快幕秀</a></dd>
+						<dd><a href="javascript:void(0)">云立方</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">关于公司</a></dt>
+						<dd><a href="javascript:void(0)">公司简介</a></dd>
+						<dd><a href="javascript:void(0)">服务宗旨</a></dd>
+						<dd><a href="javascript:void(0)">媒体频道</a></dd>
+						<dd><a href="javascript:void(0)">服务声明</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">联系我们</a></dt>
+						<dd><a href="javascript:void(0)">联系方式</a></dd>
+						<dd><a href="javascript:void(0)">市场合作</a></dd>
+					</dl>
+				</div>
+				<div class="erweima">
+					<img src="images/erweima.png" alt="ewm">
+					<img src="images/dianhua.png" alt="dh">
+				</div>
+
+				<div class="footer_bottom">
+					<p>Copyright@2016 www.izbang.cn all rights reserved. 上海红快展示科技有限公司</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
